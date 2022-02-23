@@ -1,6 +1,7 @@
 module.exports = {
-  "title": "fengqignblog",
-  "description": "枫情博客",
+  "title": "zionBlog",
+  "description": "前端博客",
+  "base": '/zionBlog/',
   "dest": "public",
   "head": [
     [
@@ -19,6 +20,25 @@ module.exports = {
     ]
   ],
   plugins: [
+    [
+      "@vuepress-reco/vuepress-plugin-bgm-player",{
+        audios: [
+          // 本地文件示例
+          // {
+          //   name: '장가갈 수 있을까',
+          //   artist: '咖啡少年',
+          //   url: '/bgm/1.mp3',
+          //   cover: '/bgm/1.jpg'
+          // },
+          {
+            name: '孤勇者',
+            artist: '祖娅纳惜',
+            url: 'https://m801.music.126.net/20220101211622/c6961a51fdeb9f8a41c4de26c998aca7/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/11981159467/a3d1/61c1/aeed/1ac8e9cc1dbb95461bf6cc2396805908.m4a',
+            cover: 'http://p1.music.126.net/Z25vG8gwiYPpwttD9mD1ag==/109951166705090906.jpg?param=130y130'
+          },
+        ]  
+      }
+    ],
     [
       "vuepress-plugin-cursor-effects",
       {
@@ -54,31 +74,6 @@ module.exports = {
         separator: "-", // Separator of the slug, default: '-'
       },
     ],
-    ["meting", {
-      meting: {
-        // 歌单地址-> 如果输入可忽略server|type|mid
-        // 但是不知道为什么不写上这三个会报错, 所以我都写上了
-        auto: 'https://music.163.com/#/song?id=1892295825',
-        // 当前服务为netease -> 网易
-        server: "netease",
-        // 类型为歌单
-        type: "playlist",
-        // 歌单id
-        mid: "5312894314",
-      },
-      aplayer: {
-        // 歌单为随机
-        order: 'random',
-        // 0为不显示歌词
-        lrcType: 0,
-        // 音量
-        volume: 0.15,
-        // 开启迷你模式
-        mini: true,
-        // 自动播放
-        autoplay: true
-      }
-    }]
   ],
   "theme": "reco",
   "themeConfig": {
@@ -120,14 +115,14 @@ module.exports = {
     },
     "friendLink": [
     ],
-    "logo": "/logo.png",
+    "logo": "/avatar.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
-    "author": "枫情",
-    "authorAvatar": "/avatar.png",
-    "record": "xxxx",
-    "startYear": "2017",
+    "author": "Zion",
+    "authorAvatar": "/avatar.jpg",
+    "record": "zzy672385981",
+    "startYear": "2021",
     "subSidebar": 'auto', // 自动形成侧边导航
   },
   "markdown": {

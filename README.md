@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: 前端宝典
+tagline: 巴山楚水凄凉地，responsibility
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',

@@ -4,7 +4,8 @@
   "author": "reco_luan",
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
-    "build": "vuepress build ."
+    "build": "vuepress build .",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "vuepress": "1.8.2",
@@ -15,6 +16,7 @@
   },
   "description": "枫情博客",
   "dependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
     "vuepress-plugin-permalink-pinyin": "^1.0.0"
