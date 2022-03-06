@@ -249,9 +249,9 @@ DOCTYPE（文档类型），向 HTML 文档添加`<!DOCTYPE>`声明，告知浏�
 - range ： 可以提供给一个范围，其中可以设置max和min以及value，其中value属性可以设置为默认值
 - color ： 提供了一个取色板
 - time ： 时分秒
-- data ： 日期选择年月日
-- datatime ： 时间和日期(目前只有Safari支持)
-- datatime-local ：日期时间控件
+- date ： 日期选择年月日
+- datetime ： 时间和日期(目前只有Safari支持)
+- datetime-local ：日期时间控件
 - week ：周控件
 - month：月控件
 
@@ -279,7 +279,7 @@ DOCTYPE（文档类型），向 HTML 文档添加`<!DOCTYPE>`声明，告知浏�
 ### 4. 进度条、度量器
 
 - progress标签：用来表示任务的进度（IE、Safari不支持），max用来表示任务的进度，value表示已完成多少
-- meter属性：用来显示剩余容量或剩余库存（IE、Safari不支持）
+- meter标签：用来显示剩余容量或剩余库存（IE、Safari不支持）
 
 - - high/low：规定被视作高/低的范围
   - max/min：规定最大/小值
